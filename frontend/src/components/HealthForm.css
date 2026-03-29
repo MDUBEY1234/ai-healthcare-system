@@ -1,0 +1,16 @@
+/* src/components/HealthForm.css */
+.health-form-card {
+  background: rgba(0, 0, 0, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+  padding: 2rem;
+  border-radius: 16px;
+  transition: all 0.3s ease;
+}
+.health-form-card:hover, .history-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 25px var(--glow-blue);
+}
+.health-form-title { font-size: 1.75rem; color: var(--text-primary); font-weight: 600; margin-bottom: 0.5rem; }
+.health-form-subtitle { font-size: 1rem; color: var(--text-muted); margin-bottom: 2rem; }
+.form-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1.5rem; margin-bottom: 1.5rem; }

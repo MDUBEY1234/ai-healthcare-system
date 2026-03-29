@@ -1,0 +1,22 @@
+/* src/components/UI/ProfileDropdown.css */
+.profile-dropdown { position: relative; }
+.dropdown-toggle { display: flex; align-items: center; background: none; border: 1px solid var(--border-color); cursor: pointer; padding: 4px; border-radius: 9999px; transition: all 0.2s; }
+.dropdown-toggle:hover { border-color: var(--accent-purple); box-shadow: 0 0 10px var(--glow-purple); }
+.user-name { margin: 0 12px 0 8px; font-weight: 500; color: var(--text-primary); }
+.chevron-icon { transition: transform 0.2s; }
+.chevron-icon.open { transform: rotate(180deg); }
+
+/* The fix is here */
+.dropdown-menu { 
+  position: absolute; right: 0; top: calc(100% + 10px); 
+  background-color: var(--card-surface); 
+  border-radius: 8px; 
+  box-shadow: 0 10px 15px -3px rgba(0,0,0,0.4); 
+  width: 200px; z-index: 50; 
+  border: 1px solid var(--border-color);
+}
+.dropdown-item { display: flex; align-items: center; width: 100%; padding: 12px 16px; text-align: left; font-size: 1rem; color: var(--text-primary); text-decoration: none; background: none; border: none; cursor: pointer; transition: background-color 0.2s; }
+.dropdown-item:hover { background-color: rgba(139, 92, 246, 0.1); }
+.dropdown-item i { margin-right: 12px; width: 20px; text-align: center; color: var(--text-secondary); }
+.dropdown-divider { height: 1px; background-color: var(--border-color); margin: 8px 0; }
+.dropdown-item.logout { color: #f87171; }

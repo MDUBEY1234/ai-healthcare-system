@@ -1,0 +1,34 @@
+/* src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* New Vibrant Color Palette */
+  --background-dark: #0d1117; /* Very dark, almost black */
+  --card-surface: #161b22; /* A slightly lighter dark for cards */
+  --border-color: rgba(139, 92, 246, 0.2); /* Subtle purple border */
+
+  --accent-blue: #3b82f6;
+  --accent-purple: #8b5cf6;
+  --accent-cyan: #06b6d4;
+  
+  --glow-purple: rgba(139, 92, 246, 0.5);
+  --glow-blue: rgba(59, 130, 246, 0.5);
+
+  /* Text Colors */
+  --text-primary: #e6edf3; /* Off-white for better readability */
+  --text-secondary: #7d8590;
+  --text-muted: #484f58;
+}
+
+body {
+  background-color: #03031e;;
+  color: var(--text-primary);
+  /* ... rest of body styles remain the same ... */
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

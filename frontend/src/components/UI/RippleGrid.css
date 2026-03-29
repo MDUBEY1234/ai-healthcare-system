@@ -1,0 +1,24 @@
+/* src/components/UI/RippleGrid.css */
+.ripple-grid-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  overflow: hidden;
+  background: transparent !important;
+  pointer-events: none; /* Allow clicks to pass through */
+  /* Prevent any white flash during loading */
+  background-color: transparent !important;
+}
+
+.ripple-grid-container canvas {
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  background: transparent !important;
+  display: block !important;
+}

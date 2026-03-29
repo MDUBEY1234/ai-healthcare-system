@@ -1,0 +1,37 @@
+/* src/components/ReportHistoryList.css */
+.history-card {
+  background: rgba(0, 0, 0, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 1.5rem;
+  border-radius: 16px;
+   backdrop-filter: blur(5px);
+  transition: all 0.3s ease;
+}
+.health-form-card:hover, .history-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 25px var(--glow-blue);
+}
+.history-title { font-size: 1.5rem; color: #ffffff;; margin-bottom: 1.5rem; font-weight: 600; }
+.history-list { list-style-type: none; padding: 0; margin: 0; }
+.history-item { display: flex; justify-content: space-between; align-items: center; padding: 1rem 0.5rem; border-bottom: 1px solid rgba(255, 255, 255, 0.1); gap: 0.75rem; flex-wrap: wrap; }
+.history-item:last-child { border-bottom: none; }
+.item-details { font-size: 1rem; color: #a0a0a0; }
+.item-date { color: #a0a0a0; }
+.view-report-btn { /* This class is now used for more buttons */
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: var(--text-secondary);
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.2s ease-in-out;
+}
+.view-report-btn:hover { background: var(--accent-blue); color: white; border-color: var(--accent-blue); }
+
+/* removed custom danger style; delete uses same button style */
+
+@media (max-width: 640px) {
+  .item-details { width: 100%; }
+  .history-item { align-items: flex-start; }
+}
